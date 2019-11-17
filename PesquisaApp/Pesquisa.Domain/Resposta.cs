@@ -4,8 +4,13 @@ using System.Text;
 
 namespace Pesquisa.Domain
 {
-    internal class Resposta : BaseEntity
+    public class Resposta : BaseEntity
     {
+        public Resposta()
+        {
+            Razoes = new List<Razao>();
+        }
+
         public string Id { get; set; }
         public int IdPesquisa { get; set; }
         public int Nota { get; set; }

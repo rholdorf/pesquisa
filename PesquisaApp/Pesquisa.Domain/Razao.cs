@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Pesquisa.Domain
 {
-    internal class Razao : BaseEntity
+    public class Razao : BaseEntity
     {
         public int Id { get; set; }
-        public int IdGrupoRazao { get; set; }
+        public int Nota { get; set; }
         public string Texto { get; set; }
     }
 }

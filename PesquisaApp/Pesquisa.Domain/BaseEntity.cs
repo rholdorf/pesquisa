@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Pesquisa.Domain
 {
-    internal class BaseEntity
+    public class BaseEntity
     {
         public DateTime DateCreated { get; set; }
         public DateTime DateUpdated { get; set; }
