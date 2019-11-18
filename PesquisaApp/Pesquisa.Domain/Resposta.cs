@@ -6,7 +6,7 @@ namespace Pesquisa.Domain
 {
     public class Resposta : BaseEntity
     {
-        public Resposta()
+         public Resposta()
         {
             Razoes = new List<Razao>();
         }
@@ -16,5 +16,6 @@ namespace Pesquisa.Domain
         public int Nota { get; set; }
         public string ExtraInfo { get; set; }
         public List<Razao> Razoes { get; set; }
+        public Pesquisa Pesquisa { get; set; }
     }
 }
